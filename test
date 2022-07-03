@@ -1,0 +1,19 @@
+local Named = Instance.new("ScreenGui")
+Named.Name = "Named"
+Named.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local Hola = Instance.new("Frame")
+Hola.Name = "Hola!"
+Hola.Size = UDim2.new(0, 522, 0, 284)
+Hola.Position = UDim2.new(0.3889717, 0, 0.373317, 0)
+Hola.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hola.Parent = Named
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 9.3000002
+UIStroke.Parent = Hola
+
+local UICorner = Instance.new("UICorner")
+UICorner.Parent = Hola
+
+Named.Parent = game:GetService("StarterGui")
